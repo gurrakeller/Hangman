@@ -1,14 +1,14 @@
 namespace Hangman.Classes;
 
 public class Guess
-{
+{       //variables aswell as classes was also inspired by the help of AI as the rough projact plan was created through the help of AI.
     public string Word { get; set; }
     public int Attempts { get; set; }
     public int MaxTries { get; set; } = 6;
     public char GuessChar { get; set; }
 
     private List<string> Words = new List<string>()
-    {
+    {       //list created with the help of AI giving word inspiration.
         "Book", "New", "Computer", "School", "Programming",
         "Window", "Bottle", "Keyboard", "Mountain", "River",
         "Planet", "Ocean", "Music", "Flower", "Bridge",
@@ -35,7 +35,9 @@ public class Guess
             Console.WriteLine();
 
             foreach (char c in randomWord)
-            {
+            {       //i had problems getting this to work without asking AI. whenever I tried to do it myself
+                    //it would simply give me the wrong output but with the help of AI I could figure out the problem.
+                    //so this also is inspired by AI
                 if (guessedLetters.Contains(c))
                     Console.Write(c + " ");
                 else
